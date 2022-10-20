@@ -16,8 +16,8 @@ class CreateReportsTable extends Migration
         Schema::create('reports', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->foreignId('user_id'); // OWNER OF REQUEST
-            $table->foreignId('race_id'); // OWNER OF REQUEST
+            $table->foreignId('user_id'); 
+            $table->foreignId('race_id');
 
             $table->longText('desc');
             $table->string('who');
