@@ -15,8 +15,10 @@ class CreateRacesTable extends Migration
     {
         Schema::create('races', function (Blueprint $table) {
             $table->id();
-            $table->date()->nullable();
-
+            $table->decimal('current_trigger', 3, 3)->default(0);
+            $table->decimal('about_time', 3, 3)->default(0);
+            $table->decimal('other_time', 3, 3)->default(0);
+            $table->integer('raceid')->default(-1);
             $table->timestamps();
         });
     }

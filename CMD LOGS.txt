@@ -1,9 +1,19 @@
 composer require laravel/ui
 
 php artisan ui bootstrap --auth
-php artisan ui vue --auth
-php artisan ui react --auth
+#php artisan ui vue --auth
+#php artisan ui react --auth
+
+# install Node Js then run this 
+npm install && npm run dev
 
 
 
-php artisan ui:auth
+Download and put in public (or wherever you deploy on server)
+Material Dasboard template
+copy tempalte to resources/view/layouts/copied.html
+change .html to Newname.blade.php
+
+
+(Make sure configue .env with your database )
+php artisan migrate:fresh --seed
